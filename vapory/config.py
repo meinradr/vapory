@@ -1,6 +1,8 @@
 import os
 
-POVRAY_BINARY = ("povray.exe" if os.name=='nt' else "povray")
+# the nane of the binary in Windows is 'pvengine.exe' not 'povray.exe'
+#POVRAY_BINARY = ("povray.exe" if os.name=='nt' else "povray")
+POVRAY_BINARY = ("pvengine.exe" if os.name=='nt' else "povray")
 
 GLOBAL_SCENE_SETTINGS = {
     "charset"        : "ascii",
